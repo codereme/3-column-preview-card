@@ -18,9 +18,20 @@
   --ff-primary: "Lexend Deca", sans-serif;
   --ff-secondary: "Big Shoulders Display", sans-serif;
   --fs-base: 15px;
+  --fs-heading: clamp(1.86rem, 0.47vw + 0.88rem, 2.13rem); /* 28px - 32px */
+  --fs-text: clamp(1rem, 0.47vw + 0.88rem, 1.2rem); /* 15px - 18px */
 
   --fw-regular: 400;
   --fw-bold: 700;
+
+  /* Spacings */
+  --spacing-md: clamp(2rem, 2.5vw, 3rem);
+
+  /* Border radius */
+  --border-radius-lg: 24px;
+
+  /* Box shadow */
+  --shadow-subtle: 0px 8px 10px rgba(0, 0, 0, 0.2);
 }
 html {
   font-size: var(--fs-base);
@@ -33,7 +44,7 @@ html {
   justify-content: center;
   min-height: 100vh;
 
-  padding-block: 2rem;
+  padding-block: var(--spacing-md);
   background-color: var(--gray-100);
 }
 .cards-container {
@@ -41,14 +52,14 @@ html {
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-subtle);
 }
 
 .card {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  padding: 2rem;
+  padding: var(--spacing-md);
   overflow: hidden;
 }
 .card--sedans {
@@ -63,6 +74,7 @@ html {
 /* Typography */
 .card__title {
   font-family: var(--ff-secondary);
+  font-size: var(--fs-heading);
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -70,6 +82,7 @@ html {
 }
 .card__text {
   font-family: var(--ff-primary);
+  font-size: var(--fs-text);
   font-weight: var(--fw-regular);
   line-height: 1.7;
   color: var(--transparent-white);
@@ -80,9 +93,10 @@ html {
   align-self: flex-start;
   display: inline-block;
   padding: 0.7rem 1.8rem;
+  font-family: var(--ff-primary);
   text-decoration: none;
   border: 2px solid transparent;
-  border-radius: 24px;
+  border-radius: var(--border-radius-lg);
   background-color: var(--gray-100);
   cursor: pointer;
   transition: color 0.2s ease, border 0.2s ease;
@@ -126,6 +140,7 @@ html {
   /* Layout */
   .cards-container {
     flex-direction: row;
+    width: min(850px, 90vw);
   }
 }
 @media (prefers-reduced-motion: reduce) {
