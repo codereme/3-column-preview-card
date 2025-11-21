@@ -2,11 +2,29 @@
 
 ## The challenge
 
-Your challenge is to build out this 3-column preview card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
+
+## Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- BEM methodology
+- Mobile-first workflow
+
+## Screenshot
+
+![Desktop screenshot](./images/desktop-screenshot.png)
+
+## Links
+
+- Solution URL: [https://www.frontendmentor.io/solutions/3-column-flex-card-Z08rUbh6b7](https://www.frontendmentor.io/solutions/3-column-flex-card-Z08rUbh6b7)
+- Live Site URL: [https://codereme.github.io/3-column-preview-card](https://codereme.github.io/3-column-preview-card)
+
+## Author
+
+- Frontend Mentor - [@codereme](https://www.frontendmentor.io/profile/codereme)
+- Github - [@codereme](https://github.com/codereme)
